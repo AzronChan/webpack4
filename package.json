@@ -16,7 +16,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm commit-lint"
+      "pre-commit": "npm bar"
     }
   },
   "keywords": [],
