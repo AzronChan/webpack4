@@ -14,7 +14,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm dev"
+      "pre-commit": "npm run dev"
     }
   },
   "keywords": [],
