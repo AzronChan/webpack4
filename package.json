@@ -15,7 +15,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint:fix"
+      "pre-commit": "lint-staged"
     }
   },
   "lint:fix": "cross-env NODE_ENV=prod eslint --fix --ext .js,.vue src",
