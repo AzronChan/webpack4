@@ -12,14 +12,14 @@
     "serve": "http-server ./dist -p 8888 -o",
     "serve2": "http-server ./dist -p 8888",
     "bar": "echo \"bar\" && exit 0",
-    "pre-commit" : "console.log(1111111)",
+    "test" : "echo \"bar\" && exit 0",
     "hooks": {
       "pre-commit": "console.log(1111111)"
     }
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm test",
+      "pre-commit": "npm test"
     }
   },
   "keywords": [],
