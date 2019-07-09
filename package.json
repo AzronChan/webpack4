@@ -3,11 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "husky": {
     "hooks": {
-      "pre-commit": "npm run dev"
-    }
-  },
+      "pre-commit": "npm run lint"
+    },
   "scripts": {
     "dev": "cross-env NODE_ENV=dev webpack-dev-server --open",
     "build": "cross-env NODE_ENV=prod webpack -p",
