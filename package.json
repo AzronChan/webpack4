@@ -13,12 +13,6 @@
     "serve2": "http-server ./dist -p 8888",
     "test" : "echo \"bar\""
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint:fix": "cross-env NODE_ENV=prod eslint --fix --ext .js,.vue src",
   "keywords": [],
   "author": "",
   "license": "ISC",
