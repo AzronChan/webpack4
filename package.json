@@ -10,11 +10,11 @@
     "lint:fix": "cross-env NODE_ENV=prod eslint --fix --ext .js,.vue src",
     "commit-lint": "cross-env NODE_ENV=prod eslint --ext src/.js",
     "serve": "http-server ./dist -p 8888 -o",
-    "serve2": "http-server ./dist -p 8888",
+    "serve2": "http-server ./dist -p 8888"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm bar"
+      "pre-commit": "npm dev"
     }
   },
   "keywords": [],
