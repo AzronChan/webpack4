@@ -15,9 +15,10 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm test"
+      "pre-commit": "npm lint:fix"
     }
   },
+  "lint:fix": "cross-env NODE_ENV=prod eslint --fix --ext .js,.vue src",
   "keywords": [],
   "author": "",
   "license": "ISC",
