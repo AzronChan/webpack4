@@ -12,7 +12,7 @@
     "serve": "http-server ./dist -p 8888 -o",
     "serve2": "http-server ./dist -p 8888",
     "bar": "echo \"bar\" && exit 0",
-    "test" : "echo \"bar1\" && exit 0"
+    "test" : "echo \"bar22222222222222\" && exit 0"
   },
   "husky": {
     "hooks": {
