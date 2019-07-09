@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-    "hooks": {
-      "pre-commit": "npm run lint"
-    },
   "scripts": {
     "dev": "cross-env NODE_ENV=dev webpack-dev-server --open",
     "build": "cross-env NODE_ENV=prod webpack -p",
@@ -15,7 +12,11 @@
     "serve": "http-server ./dist -p 8888 -o",
     "serve2": "http-server ./dist -p 8888"
   },
-  
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm test"
+    }
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
