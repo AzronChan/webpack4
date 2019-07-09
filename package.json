@@ -19,7 +19,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "console.log(1111111)"
+      "pre-commit": "npm test",
     }
   },
   "keywords": [],
