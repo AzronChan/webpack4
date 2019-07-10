@@ -35,12 +35,20 @@ module.exports = {
         rules: [{
             test: /\.js$/,
             exclude: /node_modules/,
-            use: {
+            use: [{
                 loader: 'babel-loader',
                 options: {
                     presets: ['env'],
                 },
-            },
+            }, {
+                loader: 'eslint-loader',
+                options: {
+                    // 启用警告信息
+                    emitWarning: true,
+                    // 启用自动修复
+                    fix: true,
+                },
+            }],
         },
         {
             test: /\.(html)$/,

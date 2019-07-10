@@ -1,5 +1,5 @@
 {
-  "name": "vip-activity",
+  "name": "webpack-cli-f-czl",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,16 +7,8 @@
     "dev": "cross-env NODE_ENV=dev webpack-dev-server --open",
     "build": "cross-env NODE_ENV=prod webpack -p",
     "lint": "cross-env NODE_ENV=lint webpack-dev-server --open",
-    "lint:fix": "cross-env NODE_ENV=prod eslint --fix --ext .js,.vue src",
-    "commit-lint": "cross-env NODE_ENV=prod eslint --ext src/.js",
     "serve": "http-server ./dist -p 8888 -o",
-    "serve2": "http-server ./dist -p 8888",
-    "test": "echo \"bar\""
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "echo $HUSKY_GIT_PARAMS"
-    }
+    "serve2": "http-server ./dist -p 8888"
   },
   "keywords": [],
   "author": "",
@@ -27,6 +19,7 @@
     "art-template-loader": "^1.4.3",
     "autoprefixer": "^8.1.0",
     "babel-core": "^6.26.0",
+    "babel-eslint": "^10.0.2",
     "babel-loader": "^7.1.4",
     "babel-plugin-array-includes": "^2.0.3",
     "babel-plugin-transform-runtime": "^6.23.0",
@@ -58,6 +51,9 @@
     "babel-polyfill": "^6.26.0",
     "babel-runtime": "^6.26.0",
     "eslint-loader": "^2.2.1",
+    "gulp": "^4.0.2",
+    "gulp-tinypng-nokey": "^1.1.0",
+    "gulp.spritesmith": "^6.10.1",
     "js-cookie": "^2.2.0",
     "md5": "^2.2.1",
     "node-sass": "^4.11.0",
