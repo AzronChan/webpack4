@@ -100,7 +100,4 @@ module.exports = {
         // 自动生成 HTML 插件
         ...HTMLPlugins,
     ],
-    externals: {
-        KgMobileCall: 'KgMobileCall',
-    },
 };

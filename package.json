@@ -1,5 +1,5 @@
 {
-  "name": "webpack-cli-f-czl",
+  "name": "czl-work-cli",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,6 +9,9 @@
     "lint": "cross-env NODE_ENV=lint webpack-dev-server --open",
     "serve": "http-server ./dist -p 8888 -o",
     "serve2": "http-server ./dist -p 8888"
+  },
+  "bin": {
+    "czl-cli": "./bin/czl-cli.js"
   },
   "keywords": [],
   "author": "",
@@ -50,7 +53,10 @@
   "dependencies": {
     "babel-polyfill": "^6.26.0",
     "babel-runtime": "^6.26.0",
+    "commander": "^2.20.0",
+    "download-git-repo": "^2.0.0",
     "eslint-loader": "^2.2.1",
+    "glob": "^7.1.4",
     "gulp": "^4.0.2",
     "gulp-tinypng-nokey": "^1.1.0",
     "gulp.spritesmith": "^6.10.1",
